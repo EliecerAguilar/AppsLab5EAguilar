@@ -18,6 +18,15 @@
             android:layout_height="225dp"
             app:srcCompat="@drawable/img_welcome" />
 
+        <TextView
+            android:id="@+id/TV_usr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_tv1"
+            android:layout_marginHorizontal="50dp"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
         <LinearLayout
             android:id="@+id/LL_h1User"
             android:layout_width="match_parent"
