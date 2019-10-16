@@ -2,7 +2,9 @@ package com.example.appslab5eaguilar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -24,6 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         this.load();
+        this.DatosUsuario();//sharedPrefernces
 
     }
 
@@ -37,10 +40,10 @@ public class LoginActivity extends AppCompatActivity {
 
     //enviar datos a la siguiente actividad
     public void SignUp(View view){
-        if (verif()== true){
+        if (verif()){
             Intent intent = new Intent(this,DatosActivity.class);// parametros actividad actual, Activity a donde se dirige
             intent.putExtra("usr",edtUsr.getText().toString());
-            intent.putExtra("pass",edtPass.getText().toString());
+            //intent.putExtra("pass",edtPass.getText().toString());
             startActivity(intent);
         }
     }
@@ -52,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public Boolean verif(){
         if (validarEmail(edtUsr.getText().toString())){
-            if (edtUsr.getText().toString() == "elieaguilar91@gmail.com" && edtPass.getText().toString() == "1234"){
+            if (edtUsr.getText().toString().equals("elieaguilar91@gmail.com") && edtPass.getText().toString().equals("1234")){
                 return true;
             }
         }
@@ -60,8 +63,17 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     //datos con sharedPreference
-    public void Dat(){
+    public void DatosUsuario(){
+        //CREACION DEL ARCHIVO SHAREDPREFERENCES
+        SharedPreferences preferences = getSharedPreferences("datos", Context.MODE_PRIVATE);
+        //CREACION DE VARIABLE PARA EDITAR EL ARCHIVO SHAREDPREFERENCES
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("nom","Eliecer");
+        editor.putString("ced","2-741-1287");
+        editor.putString("grup","1IL141");
+        editor.putString("tema","Laboratorio 5");
 
+        editor.commit();//completa el proceso de guardado de la informacion
     }
 
 

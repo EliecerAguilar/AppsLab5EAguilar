@@ -22,6 +22,8 @@ public class DatosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_datos);
         this.load();
+
+        tv_usr.setText(getIntent().getStringExtra("usr").toString());
     }
 
 
@@ -33,6 +35,8 @@ public class DatosActivity extends AppCompatActivity {
         tv_usr = (TextView)findViewById(R.id.TV_usr);
 
     }
+
+
 
 
 
