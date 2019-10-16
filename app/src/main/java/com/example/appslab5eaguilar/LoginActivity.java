@@ -5,15 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class LoginActivity extends AppCompatActivity {
 
     private EditText edtUsr;
     private EditText edtPass;
     //private Button btnLogin;
-
+    private ImageView img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void load(){
         edtUsr = (EditText) findViewById(R.id.ETusr);
         edtPass = (EditText)findViewById(R.id.ETpass);
+        img = (ImageView)findViewById(R.id.imgLog);
+        img.setImageResource(R.drawable.login_icon);
     }
 
     //enviar datos a la siguiente actividad
