@@ -21,6 +21,7 @@ public class DatosActivity extends AppCompatActivity {
     private TextView tv_grup;
     private TextView tv_tema;
     private TextView tv_usr;
+    private TextView tv_pass;
 
 
     @Override
@@ -38,7 +39,16 @@ public class DatosActivity extends AppCompatActivity {
         tv_grup = (TextView)findViewById(R.id.TV_grup);
         tv_tema = (TextView)findViewById(R.id.TV_tema);
         tv_usr = (TextView)findViewById(R.id.TV_usr);
-        tv_usr.setText(getIntent().getStringExtra("usr").toString());
+        tv_usr.setText(getIntent().getStringExtra("usr").toString());//Recibo de datos con Intent
+        //recibo de datos con Bundle
+        tv_pass = (TextView)findViewById(R.id.TV_pass);
+        Bundle bundle = this.getIntent().getExtras();
+        if (bundle != null) {
+            tv_pass.setText(bundle.getString("pass"));
+        }
+        else
+            Toast.makeText(this, "No Bundle",Toast.LENGTH_LONG).show();
+
     }
 
     private void cargarDatos(){

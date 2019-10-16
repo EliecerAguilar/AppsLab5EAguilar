@@ -44,6 +44,13 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(this,DatosActivity.class);// parametros actividad actual, Activity a donde se dirige
             intent.putExtra("usr",edtUsr.getText().toString());
             //intent.putExtra("pass",edtPass.getText().toString());
+
+
+            //paso de valores mediante clase Bundle
+            Bundle bundle = new Bundle();
+            bundle.putString("pass",edtPass.getText().toString());
+
+            intent.putExtras(bundle);
             startActivity(intent);
         }
     }
