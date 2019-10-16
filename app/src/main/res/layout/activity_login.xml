@@ -21,7 +21,7 @@
             android:src="@drawable/img_welcome" />
 
         <EditText
-            android:id="@+id/TVusr"
+            android:id="@+id/ETusr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
@@ -30,7 +30,7 @@
             android:textSize="16sp"/>
 
         <EditText
-            android:id="@+id/TVpass"
+            android:id="@+id/ETpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
