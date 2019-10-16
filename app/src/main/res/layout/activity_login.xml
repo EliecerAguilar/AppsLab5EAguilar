@@ -18,12 +18,16 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="225dp"
-            android:src="@drawable/img_welcome" />
+            tools:src="@drawable/login_icon" />
+
+
 
         <EditText
             android:id="@+id/ETusr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop = "10dp"
             android:hint="@string/str_tv1"
@@ -33,10 +37,13 @@
             android:id="@+id/ETpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop = "10dp"
             android:hint="@string/str_tv2"
             android:textSize="16sp"/>
+
 
         <Button
             android:id="@+id/btn1"

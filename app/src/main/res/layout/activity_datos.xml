@@ -6,4 +6,113 @@
     android:layout_height="match_parent"
     tools:context=".DatosActivity">
 
+    <LinearLayout
+        android:id="@+id/LLy_v2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            app:srcCompat="@drawable/img_welcome" />
+
+        <LinearLayout
+            android:id="@+id/LL_h1User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TV_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tvNom"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/TV_nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/tvNom"
+                android:layout_marginRight="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_h2Ced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TV_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tvCed"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/TV_cip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:hint="@string/tvCed"
+                android:layout_marginRight="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_h3Grup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TV_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tvGru"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/TV_grup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:hint="@string/tvGru"
+                android:layout_marginRight="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_h4Tem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TV_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tvTem"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/TV_tema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:hint="@string/tvTem"
+                android:layout_marginRight="30dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

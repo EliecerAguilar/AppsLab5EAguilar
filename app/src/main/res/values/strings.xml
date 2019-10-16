@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Login</string>
-    <string name="str_tv1">Usuario</string>
+    <string name="str_tv1">Usuario / e-mail</string>
     <string name="str_tv2">contrasena</string>
     <string name="btn01">Sign in</string>
+    <string name="tvNom">Nombre</string>
+    <string name="tvCed">Cedula</string>
+    <string name="tvGru">Grupo</string>
+    <string name="tvTem">Tema</string>
 </resources>
