@@ -26,29 +26,31 @@
             android:src="@drawable/img_welcome" />
 
         <EditText
-            android:id="@+id/TV1"
-            android:layout_width="300dp"
+            android:id="@+id/TVusr"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginHorizontal="30dp"
             android:layout_marginTop = "10dp"
             android:hint="@string/str_tv1"
             android:textSize="16sp"/>
 
         <EditText
-            android:id="@+id/TV2"
-            android:layout_width="300dp"
+            android:id="@+id/TVpass"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginHorizontal="30dp"
             android:layout_marginTop = "10dp"
             android:hint="@string/str_tv2"
             android:textSize="16sp"/>
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="300dp"
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn01"
-            android:layout_margin="30dp"
-            android:textSize="18sp"/>
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:textSize="18sp"
+            android:background="#2196F3"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
